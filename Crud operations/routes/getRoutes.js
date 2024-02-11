@@ -1,16 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const YourModel = require('../models/yourModel');
 
-// GET route
-router.get('/', async (req, res) => {
-  try {
-    const data = await YourModel.find();
-    res.json(data);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Internal Server Error' });
-  }
-});
+const getController = require('../controllers/getController');
 
-module.exports = router;
+router.get('/', getController.getAll);
+router.get('/:id', getController.getOne);
+
+module.exports = router; 
