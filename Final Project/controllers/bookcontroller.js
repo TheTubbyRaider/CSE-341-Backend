@@ -1,17 +1,31 @@
 const Book = require('../models/Book');
 
-// controller methods for book CRUD operations
+// Controller functions for books
 
-exports.getBooks = async (req, res) => {
-  // get all books logic
+const getBooks = async (req, res) => {
+  // Get all books
 };
 
-exports.getBook = async (req, res) => {
-  // get single book logic
+const getBook = async (req, res) => { 
+  // Get single book by id
 };
 
-exports.createBook = async (req, res) => {
-  // create new book logic
+const createBook = async (req, res) => {
+  // Create new book
 };
 
-// etc.
+const updateBook = async (req, res) => {
+  // Update book by id
+};
+
+const deleteBook = async (req, res) => {
+  // Delete book by id 
+};
+
+module.exports = {
+  getBooks,
+  getBook,
+  createBook,
+  updateBook,
+  deleteBook
+}

@@ -1,14 +1,14 @@
-const User = require('../models/User');  
+const User = require('../models/User');
 
-const register = async (req, res) => {
-  // Register user logic
+const registerUser = async (req, res) => {
+  // Implement user registration  
 };
 
-const login = async (req, res) => {
-  // Login user logic
+const loginUser = async (req, res) => {
+  // Implement user login
 };
 
 module.exports = {
-  register,
-  login 
+  registerUser,
+  loginUser
 };
