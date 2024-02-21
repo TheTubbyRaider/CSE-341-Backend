@@ -1,15 +1,14 @@
 const express = require('express');
-const { 
+const {
   getBooks,
   getBook,
   createBook,
   updateBook,
-  deleteBook
+  deleteBook  
 } = require('../controllers/bookControllers');
 
 const router = express.Router();
 
-// RESTful routes for books
 router.get('/', getBooks);
 router.get('/:id', getBook);
 router.post('/', createBook);

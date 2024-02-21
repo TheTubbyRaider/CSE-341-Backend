@@ -15,7 +15,7 @@ const BookSchema = new mongoose.Schema({
   },
   yearPublished: {
     type: Number
-  } 
+  }
 });
 
 module.exports = mongoose.model('Book', BookSchema);
