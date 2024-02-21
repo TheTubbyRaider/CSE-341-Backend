@@ -15,6 +15,13 @@ const BookSchema = new mongoose.Schema({
   },
   yearPublished: {
     type: Number
+  },
+  isLentOut: {
+    type: Boolean,
+    default: false
+  },
+  lentTo: {
+    type: String
   }
 });
 

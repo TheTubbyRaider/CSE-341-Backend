@@ -1,4 +1,4 @@
-// Genre controller methods
+// Final Project\controllers\genreController.js
 
 const Genre = require('../models/Genre');
 
@@ -12,7 +12,7 @@ const getGenre = async (req, res) => {
 
 const createGenre = async (req, res) => {
   // Create genre
-} 
+}
 
 // etc...
 
@@ -21,5 +21,5 @@ module.exports = {
   getGenre,
   createGenre,
   updateGenre,
-  deleteGenre 
+  deleteGenre
 }

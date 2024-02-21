@@ -25,7 +25,7 @@ const getUser = async (req, res) => {
     console.error(err);
     res.status(500).send('Server Error');
   }
-}  
+}
 
 // @desc    Create new user
 // @route   POST /api/users
@@ -33,7 +33,17 @@ const createUser = async (req, res) => {
   // Create user logic
 }
 
-// etc...
+// @desc    Update user
+// @route   PUT /api/users/:id
+const updateUser = async (req, res) => {
+  // Update user logic  
+}
+
+// @desc    Delete user
+// @route   DELETE /api/users/:id  
+const deleteUser = async (req, res) => {
+  // Delete user logic
+}
 
 module.exports = {
   getUsers,
